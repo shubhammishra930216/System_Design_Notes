@@ -9,5 +9,8 @@ There are primarily 2 types of partitioning :
      Limitations: To generate the response ,as different tables are joined ,it may increase the overall latency of the system . 
 
 
-2.Horizontal [Sharring] > 
+2.Horizontal [Sharring] -> This process is also known as sharding ,in this process we split the dataset into smaller dataset with each dataset containing a small percentage of the total rows of the original dataset . This is a physical partitioning . 
+      
+      Limitations: 1. As the rows are distributed across multiple nodes , we loose the atomiicty of operations 
+      2.There might be multiple nodes scan if the range of requested response is large which may increase latency 
 
