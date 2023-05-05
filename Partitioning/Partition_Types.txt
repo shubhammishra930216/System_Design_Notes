@@ -1,0 +1,13 @@
+->One of the Most importent needs in a distributed system is "Scalbility" of the system and one of the ways to achives the same is "PARTITIONING"
+
+#PARTITIONING -> It is the process of splitting the dataset into smaller datasets and assiging these smaller datasets to different nodes for their management and processing . 
+
+There are primarily 2 types of partitioning :
+
+1. Vertical - In this process , we split the dataset into smaller dataset with fewer columns and with additional tables storing the column which defines relationship across rows in the tables . Its a logical partitioning of data and mostly done by developer itself . 
+
+     Limitations: To generate the response ,as different tables are joined ,it may increase the overall latency of the system . 
+
+
+2.Horizontal [Sharring] > 
+
